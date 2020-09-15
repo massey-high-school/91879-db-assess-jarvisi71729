@@ -3,21 +3,20 @@ body {
     padding: 50px;
     color: #000;
     font-family: 'Lato', sans-serif;
+    background-image: url(images/waves_2.jpg);
 }
-
 
 /* ---- Set up site grid ---- */
 
 .wrapper {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 300px 2fr 400px;
     grid-template-rows: auto;
     grid-template-areas: 
-        "banner banner"
-        "nav nav"
-        "side main"
-        "footer footer";
-        grid-gap: 4px;
+        "logo banner banner"
+        "side main main"
+        "footer footer footer";
+        grid-gap: 8px;
     
 }
 
@@ -28,15 +27,15 @@ body {
 
 .box {
     padding: 20px;
-    /* border-radius: 10px; */
     background-color: #ddd;
+    border-radius: 20px;
 }
 
 /* Area colouring... */
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #888;  /* dark grey */
+    background-color: #ad6989;  /* dark grey */
 }
 
 /* Set font on dark areas to white */
@@ -47,8 +46,12 @@ body {
 /* Area specifics */
 
 .logo {
+    grid-area: logo;
     padding: 0;
-    float: left;
+    width: 300px;
+    height: 176.69px;
+    background-color: #562349;
+    background-image: url(images/fish_logo_450x225_5.png);
     
 }
 
@@ -56,22 +59,14 @@ body {
     grid-area: banner;
 }
 
-.nav {
-    grid-area: nav;
-    background-color: #DDD;  /* silver */
-    font-size: 150%;
-    text-align: center;
-}
-
 .side {
     grid-area: side;
-    background-color: #333;
+    background-color: #ffa299;
 }
 
 .main {
     grid-area: main;
-    background-color: #EEE;  /* very pale grey */
-    border: solid 1px #CCC;
+    background-color: #fee2b3;  /* very pale grey */
 }
 
 

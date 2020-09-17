@@ -1,18 +1,18 @@
 <!DOCTYPE HTML>
 
-<?php 
-    include "head_nav.php";
-?>
+<?php include "head_nav.php"; ?>
 
-        <div class="box side">
-            Database Search Bar
-        </div>
+        <?php include "sidebar.php"; ?>
         
         <div class="box main">
             <h2>Iszac's Food Reviews</h2>
             
             <p>
-                As someone who loves visiting resteraunts, I enjoy reviewing the foods I eat just as much. With today's digital age, many diners are referring to online resteraunt/food review websites as reading reviews are a great way to grasp the rating of a dish. It is said that 90% of diners research a resteraunt online before deciding where to eat which is why I have decided to make a database reviewing 10 different dishes I have eaten.
+                As someone who loves visiting restaurants, I enjoy reviewing the foods I eat just as much to help friends and workmates. With today's digital age, many diners are referring to online restaurants/food reviewing websites as reading reviews are a great way to grasp the general idea of a dish. 
+            </p>
+            
+            <p>
+                It is said that 90% of diners research a restaurant online before deciding where to eat which is why I have decided to make a database reviewing 10 different dishes I have eaten.
             </p>
             
             <p>
@@ -22,9 +22,7 @@
             
         </div>    <!-- / main -->
         
-        <div class="box footer">
-            CC Iszac Jarvis 2020
-        </div>    <!-- / footer -->
+        <?php include "footer.php"; ?>
     
     </div>  <!-- / wrapper  -->
     

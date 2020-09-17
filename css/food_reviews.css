@@ -3,7 +3,11 @@ body {
     padding: 50px;
     color: #000;
     font-family: 'Lato', sans-serif;
-    background-image: url(images/waves_2.jpg);
+    background: url(waves_2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* ---- Set up site grid ---- */
@@ -16,7 +20,7 @@ body {
         "logo banner banner"
         "side main main"
         "footer footer footer";
-        grid-gap: 8px;
+    grid-gap: 8px;
     
 }
 
@@ -29,13 +33,14 @@ body {
     padding: 20px;
     background-color: #ddd;
     border-radius: 20px;
+    border: solid #fff 1px;
 }
 
 /* Area colouring... */
 
 /* logo, banner and footer background are the same */
 .logo, .banner, .footer {
-    background-color: #ad6989;  /* dark grey */
+    background-color: #ad6989;  /* dark magenta */
 }
 
 /* Set font on dark areas to white */
@@ -48,25 +53,31 @@ body {
 .logo {
     grid-area: logo;
     padding: 0;
-    width: 300px;
+    width: auto;
     height: 176.69px;
-    background-color: #562349;
-    background-image: url(images/fish_logo_450x225_5.png);
-    
+    background-color: #562349;  /* dark purple */
+    background-image: url(fish_logo_with_ocean.png);
 }
 
 .banner {
     grid-area: banner;
+    background: url(food_icons_purpleBG.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: inherit;
+    height: inherit;
 }
 
 .side {
     grid-area: side;
-    background-color: #ffa299;
+    background-color: #ffa299;  /* peach pink */
 }
 
 .main {
     grid-area: main;
-    background-color: #fee2b3;  /* very pale grey */
+    background-color: #fee2b3;  /* pale yellow / cream */
 }
 
 
@@ -82,29 +93,23 @@ h1, h2, h3, h4 {
 }
 
 /* Navigation Links */
-.nav a {font-weight: bold;}
-.nav a:link, .nav a:visited {color: #AA0000;} /*dark red */
-.nav a:hover {color: #604830; text-decoration: none;} /* chocolate brown */
+a.side{font-weight: bold; text-decoration: none;}
+a.side:link, a.side:visited {color: #d5f5f3} /* pale turqoise */
+a.side:hover {color: #fff;} /* white */
 
 
 /* links in page */
+/*
 a {font-weight: bold;}
-a:link{color: #AA0000;} /*dark_red */
-a:visited{color: #111177;} /* dark blue */
-a:hover{color: #000;}    /* Black*/
+a:link{color: #AA0000;}
+a:visited{color: #111177;}
+a:hover{color: #000;}
+*/
 
 
 /* Contact Form Styling */
 .contact {
     width: 100%;
-}
-
-
-.img-circle {
-    border-radius: 50%;
-    max-width: 85%;
-    height: auto;
-    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);     
 }
 
 .center_image {
@@ -118,6 +123,20 @@ a:hover{color: #000;}    /* Black*/
     font-weight: bold;
 }
 
+/* Error Box Formatting */
+.error {
+    background-color: #ffe0ed; /* pale pink */
+    border: 2px solid #8a1737; /* dark red border */
+    color: #8a1737; /* dark red */
+}
+
+/* Results Box Formatting */
+.results {
+    background-color: #fbead9;
+    border-radius: 10px;
+    border: solid #fff 1.5px;
+    padding: 10px;
+}
 
 
 

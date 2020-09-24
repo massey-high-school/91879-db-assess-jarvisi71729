@@ -120,6 +120,8 @@ a:hover{color: #000;}
     background-color: #ffe0ed; /* pale pink */
     border: 2px solid #8a1737; /* dark red border */
     color: #8a1737; /* dark red */
+    border-radius: 10px;
+    padding: 10px;
 }
 
 form {
@@ -137,7 +139,6 @@ form {
     font-family: FontAwesome;
     position: relative;
     width: 45px;
-    left: -1px;
     background-color: #fff;
     color: #000;       
     border: 1px solid #fff;

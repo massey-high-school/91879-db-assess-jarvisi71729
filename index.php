@@ -5,7 +5,7 @@
         <?php include "sidebar.php"; ?>
         
         <div class="box main">
-            <h2>Iszac's Food Reviews</h2>
+            <h2>Voracious Food Reviews</h2>
             
             <p>
                 As someone who loves visiting restaurants, I enjoy reviewing the foods I eat just as much to help friends and workmates. With today's digital age, many diners are referring to online restaurants/food reviewing websites as reading reviews are a great way to grasp the general idea of a dish. 
